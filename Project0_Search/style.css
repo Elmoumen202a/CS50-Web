@@ -1,0 +1,83 @@
+#header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  #header a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  #search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #search-container form {
+    display: flex;
+    align-items: center;
+  }
+  
+  #search-container input[type=text] {
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 20px;
+  }
+  
+  #search-container input[type=submit] {
+    background-color: #4285F4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+  
+  #lucky-button {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #4285F4;
+  }
+  .center-google{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* CSS for form elements */
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    }
+  /* CSS google image for form elements */
+    form {
+    display: inline-block;
+    }
+    label {
+    font-weight: bold;
+    }
+    input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    }
+    input[type="submit"]:hover {
+    background-color: #3e8e41;
+    }
+    .center-google{
+    display: flex;
+    justify-content: center;
+    }

@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>Advanced Search</title>
+  <style>
+    /* CSS for form elements */
+    .advance-form {
+      width: 400px;
+      margin: 25px 35px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    /* CSS for the "Advanced Search" button */
+    #header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  #header a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000000;
+  }
+    input[type="submit"] {
+      background-color: blue;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: darkblue;
+    }
+    .h1-Advanced{
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+    }
+    .line {
+    border-bottom: 1px solid #ebebeb;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <a href="index.html">Google</a>
+  </div>
+    <h1 class="h1-Advanced"> Advanced Search</h1>
+    <div class="line"></div>
+    <P>Find pages with...</P>
+    <form class="advance-form" action="https://www.google.com/search" method="get">
+      
+    <label for="query">all these words:</label>
+    <input type="text" id="query" name="as_q">
+
+    <label for="site">this exact word or phrase:</label>
+    <input type="text" id="site" name="as_epq">
+
+    <label for="filetype">any of these words:</label>
+    <input type="text" id="filetype" name="as_oq">
+
+    <label for="exclude">none of these words:</label>
+    <input type="text" id="exclude" name="as_eq">
+    <input type="submit" value="Advanced Search">
+
+  </form>
+</body>
+</html>
