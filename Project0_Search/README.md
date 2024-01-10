@@ -32,6 +32,3 @@ Check out the project in action on YouTube: [Google Search Simulation Project De
 Feel free to explore the project and provide feedback. If you have any questions or suggestions, feel free to open an issue or reach out!
 
 Happy coding! 🚀
-
-
-Happy coding! 🚀
