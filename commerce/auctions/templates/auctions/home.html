@@ -1,0 +1,17 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+<h1>Welcome to the Home Page!</h1>
+
+    {% if user.is_authenticated %}
+        <!-- Display a greeting for authenticated users -->
+        <p>Hello, {{ user.username }}! You are logged in.</p>
+        <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+        <!-- Display login and registration links for non-authenticated users -->
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'register' %}">Register</a>
+    {% endif %}
+
+{% endblock %}
