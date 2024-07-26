@@ -1,0 +1,44 @@
+.newPost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.allPosts{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px ;
+    box-sizing: border-box;
+    
+}
+.post{
+    border: 0.1px solid grey ;
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 5px 20px;
+}
+.content{
+    font-size: 16px !important;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 5px 20px; */
+}
+.username{
+    font-size: 22px!important;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 5px 20px; */
+}
+.date{
+    color: gray;
+    font-size: 16px!important;
+}

@@ -1,0 +1,33 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    <h1 ><i class="glyphicon glyphicon-bullhorn">  </i> Following</h1>
+
+    <div class="allPosts">
+      {% for post in page_obj %}
+        <div class=" post">
+            <h5 class='username'><a href="{% url 'profile' user_id=post.user.id %}"><i class="glyphicon glyphicon-user"></i>{{ post.user }}</a></h5>
+
+            <h6 class='content'><i class="glyphicon glyphicon-envelope"></i> {{ post.content }}</h6>
+            <p class='date'><i class="glyphicon glyphicon-time"></i> {{ post.date }}</p>
+            
+        </div>
+  
+            
+        {% endfor %}     
+    </div>
+
+    <div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              {% if page_obj.has_previous %}
+              <li class="page-item"><a class="page-link" href="?page={{page_obj.previous_page_number}}">Previous</a></li>
+              {% endif %}
+              {% if page_obj.has_next %}
+              <li class="page-item"><a class="page-link" href="?page={{page_obj.next_page_number}}">Next</a></li>
+              {% endif %}
+            </ul>
+          </nav>
+    </div>
+
+{% endblock %}
